@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Echoes of Arkanum — DevLog</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;600;700;900&family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', filename='assets/Echoes_of_Arkanum_Logo_no_bg.png') }}" type="image/png" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+  </head>
+  <body>
+    <header class="head" data-header>
+      <nav class="menu">
+        <input type="checkbox" id="menu"/>
+	<div class="logo">
+          <img class="pic" src="{{ url_for('static', filename='assets/Echoes_of_Arkanum_Logo_no_bg.png') }}" width="54" height="54">
+          <span class="name">Echoes of Arkanum</span>
+          <label for="menu" class="toggle"></label>
+        </div>
+        <ul class="navigation">
+          <a href="{{ url_for('home') }}">Home</a>
+          <a href="{{ url_for('devlog') }}">Dev Log</a>
+          <a href="{{ url_for('credits') }}">Credits</a>
+	  {% if current_user.is_authenticated %}
+	    <a href="{{ url_for('auth.dashboard') }}">Dashboard</a>
+	  {% else %}
+	    <a href="{{ url_for('auth.sign') }}">Log in / Register</a>
+	  {% endif %}
+        </ul>
+      </nav>
+    </header>
+
+    <div class="section">
+      <div class="container">
+
+        <header>
+          <h1 class="display" id="typewriter">Developer's Journal</h1>
+          <p class="lead">Highlights from the road...</p>
+        </header>
+
+	 <!-- pour ajouter les ul -> trouver de plus belles couleurs genre gold -->
+        <ol class="timeline">
+          <li class="reveal" style="--reveal-delay:280ms">
+            <div class="time"><span>Oct</span><span>2025</span></div>
+            <article class="entry card">
+              <h3>GameDev</h3>
+              <p>Get familiar with Ursina3D and create samples of code that are necessary for the advancement of the project.</p>
+              <!-- <ul class="tags"><li>game design</li></ul> -->
+            </article>
+          </li>  
+          <li class="reveal" style="--reveal-delay:360ms">
+            <div class="time"><span>Oct</span><span>2025</span></div>
+            <article class="entry card">
+              <h3>Assets</h3>
+              <p>Find the most important assets and test compatibility (network load, 3D animation, aligning with the game principles.</p>
+              <!-- <ul class="tags"><li>game design</li></ul> -->
+            </article>
+          </li>
+          <li class="reveal" style="--reveal-delay:360ms">
+            <div class="time"><span>Oct</span><span>2025</span></div>
+            <article class="entry card">
+              <h3>Website and Database</h3>
+              <p>Provide a complete architecture (with credentials) and a curated gameplay to communicate the vision (optional), include wizard.</p>
+              <!-- <ul class="tags"><li>web design</li></ul> -->
+            </article>
+          </li>
+	  <li class="reveal" style="--reveal-delay:360ms">
+            <div class="time"><span>Oct</span><span>2025</span></div>
+            <article class="entry card">
+              <h3>Network</h3>
+              <p>Rethink the architecture of the network flows, test server and apis functionnality, manage client-host-server data process.</p>
+              <!-- <ul class="tags"><li>networking</li></ul> -->
+            </article>
+          </li>
+          <li class="reveal" style="--reveal-delay:360ms">
+            <div class="time"><span>Nov</span><span>2025</span></div>
+            <article class="entry card">
+              <h3>Network</h3>
+              <p>From dev server (flask) to deployable server online.</p>
+              <!-- <ul class="tags"><li>networking</li></ul> -->
+            </article>
+          </li>
+          <li class="reveal" style="--reveal-delay:360ms">
+            <div class="time"><span>Nov</span><span>2025</span></div>
+            <article class="entry card">
+              <h3>Website and API</h3>
+              <p>Incorporate user-API fonctionnalities into the website by creating dedicated static web pages.</p>
+              <!-- <ul class="tags"><li>web design</li></ul> -->
+            </article>
+          </li>
+          <li class="reveal" style="--reveal-delay:360ms">
+            <div class="time"><span>Nov</span><span>2025</span></div>
+            <article class="entry card">
+              <h3>GameDev</h3>
+              <p>Make map and assets ready for preliminary tests.</p>
+              <!-- <ul class="tags"><li>game design</li></ul> -->
+            </article>
+          </li>
+          <li class="reveal" style="--reveal-delay:360ms">
+            <div class="time"><span>Nov</span><span>2025</span></div>
+            <article class="entry card">
+              <h3>Path Finder</h3>
+              <p>Implement the pathfinding algorithm using the right distance heuristic.</p>
+              <!-- <ul class="tags"><li>algorithmic</li></ul> -->
+            </article>
+          </li>
+          <li class="reveal" style="--reveal-delay:360ms">
+            <div class="time"><span>Jan</span><span>2025</span></div>
+            <article class="entry card">
+              <h3>GameDev</h3>
+              <p>Implement spells, player movements on map</p>
+              <!-- <ul class="tags"><li>game design</li></ul> -->
+            </article>
+          </li>
+        </ol>
+        <p class="lead">To be continued...</p>
+
+        <div class="section container">
+          <header>
+            <h1 class="display shine">Crew Members</h1>
+          </header>
+          <div class="carousel">
+            <div class="carousel-inner">
+              <div class="feat">
+                <img src="{{ url_for('static', filename='assets/K.png') }}" width="124" height="64">
+                <h3>Network architect</h3>
+              </div>
+              <div class="feat">
+                <img src="{{ url_for('static', filename='assets/O.png') }}" width="124" height="64">
+                <h3>3D Artist & Animator</h3>
+              </div>
+              <div class="feat">
+                <img src="{{ url_for('static', filename='assets/C.png') }}" width="124" height="64">
+                <h3>Pathfinding programmer</h3>
+              </div>
+              <div class="feat">
+                <img src="{{ url_for('static', filename='assets/C.png') }}" width="124" height="64">
+                <h3>Gameplay programmer</h3>
+              </div>
+              <div class="feat">
+                <img src="{{ url_for('static', filename='assets/S.png') }}" width="124" height="64">
+                <h3>Front-end developer</h3>
+              </div>
+              <div class="feat">
+                <img src="{{ url_for('static', filename='assets/K.png') }}" width="124" height="64">
+                <h3>Network architect</h3>
+              </div>
+              <div class="feat">
+                <img src="{{ url_for('static', filename='assets/O.png') }}" width="124" height="64">
+                <h3>3D Artist & Animator</h3>
+              </div>
+              <div class="feat">
+                <img src="{{ url_for('static', filename='assets/C.png') }}" width="124" height="64">
+                <h3>Pathfinding programmer</h3>
+              </div>
+              <div class="feat">
+                <img src="{{ url_for('static', filename='assets/C.png') }}" width="124" height="64">
+                <h3>Gameplay programmer</h3>
+              </div>
+              <div class="feat">
+                <img src="{{ url_for('static', filename='assets/S.png') }}" width="124" height="64">
+                <h3>Front-end developer</h3>
+              </div>
+            </div>
+	  </div>
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="foot">
+      <div class="container footer-inner">
+        <small>&copy; Made in France · 2030</small>
+      </div>
+    </footer>
+
+    <script defer src="{{ url_for('static', filename='scripts/site.js') }}" defer></script>
+  </body>
+</html>

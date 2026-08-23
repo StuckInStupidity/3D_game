@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Erreur {{ nb }}</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', filename='assets/Echoes_of_Arkanum_Logo_no_bg.png') }}" type="image/png" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <style>
+        .logo{margin-inline: auto;}
+        .name{font-family: 'Tangerine', serif;font-size:8vw;font-weight: 700;}
+        .error-title{font-family: Cinzel, serif;font-weight: 800;font-size:6vw;line-height: 1.1;margin-top: 20px;margin-bottom: 0;}
+        .error-text{font-family: Cinzel, serif;font-weight: 600;font-size: clamp(2rem, 5vw, 42px);margin-top: 0;margin-bottom: 20px;}
+        .btn btt{font-size: 1.4rem;}
+    </style>
+</head>
+<body>
+    <div class="container section">
+        <div class="card" style="text-align:center;padding:40px;">
+            <div class="logo" style="justify-content:center; margin-bottom:20px;">
+                <img class="pic" src="{{ url_for('static', filename='assets/Echoes_of_Arkanum_Logo_no_bg.png') }}" width="144" height="144" style="margin-right:10px;">
+                <span class="name">Echoes of Arkanum</span>
+            </div>
+            <h1 class="error-title">Erreur {{ nb }}</h1>
+            <h2 class="error-text">{{ text }}</h2>
+            <a class="btn btt" href="{{ url_for('home') }}">No Panic ! We can take you Back Home</a>
+        </div>
+    </div>
+</body>
+</html>

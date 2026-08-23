@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Echoes of Arkanum — Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;600;700;900&family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', filename='assets/Echoes_of_Arkanum_Logo_no_bg.png') }}" type="image/png" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+  </head>
+  <body>
+    <header class="head" data-header>
+      <nav class="menu">
+        <input type="checkbox" id="menu"/>
+	<div class="logo">
+          <img class="pic" src="{{ url_for('static', filename='assets/Echoes_of_Arkanum_Logo_no_bg.png') }}" width="54" height="54">
+          <span class="name">Echoes of Arkanum</span>
+          <label for="menu" class="toggle"></label>
+        </div>
+        <ul class="navigation">
+          <a href="{{ url_for('home') }}">Home</a>
+          <a href="{{ url_for('devlog') }}">Dev Log</a>
+          <a href="{{ url_for('credits') }}">Credits</a>
+	  {% if current_user.is_authenticated %}
+	    <a href="{{ url_for('auth.dashboard') }}">Dashboard</a>
+	  {% else %}
+	    <a href="{{ url_for('auth.sign') }}">Log in / Register</a>
+	  {% endif %}
+        </ul>
+      </nav>
+    </header>
+
+    <div>
+      <div class="main">
+        <div class="content container">
+          <h1 class="display" id="typewriter">Echoes of Arkanum</h1>
+          <p class="lead">Step into Echoes of Arkanum and embark on an epic medieval quest. Fight formidable enemies, acquire powerful spells, and explore various regions. Take on ancient monsters (probably your teachers), find amazing artifacts, and come back to life... by learning your lessons!".</p>
+          <div class="buttons">
+            <a href="{{ url_for('download') }}" class="btn btt">Enter Arkanum</a>
+            <a href="{{ url_for('home') }}" class="btn btn-ghost">Discover Arkanum</a>
+          </div>
+        </div>
+        <div class="minus"></div>
+      </div>
+
+      <div class="section container">
+        <div class="services">
+          <div class="service reveal" style="--reveal-delay:240ms">
+            <i class='bx bx-crown'></i>
+            <h3>Conquer the Arcane</h3>
+            <p>Choose your fighters and discover unique skills to withstand all enemies!</p>
+          </div>
+          <div class="service reveal" style="--reveal-delay:360ms">
+            <i class='bx bx-arch'></i> 
+            <h3>Edifice of the Arcane</h3>
+            <p>With a map regenerating every game, you'll never know what you'll get!</p>
+          </div>
+          <div class="service reveal" style="--reveal-delay:520ms">
+            <i class='bx bx-atom'></i>
+            <h3>Forces of the Arcane</h3>
+            <p>Countless spells and equipment are at your disposal, just don’t burn your mana!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="big section">
+        <div class="container card reveal" style="--reveal-delay:240ms">
+          <h2>Follow the journey</h2>
+          <p>We are crafting your world. Follow our dev log to see how it evolves.</p>
+          <div>
+            <a class="btn" href="{{ url_for('devlog') }}">Read the Dev Log</a>
+          </div>
+        </div>
+        <div class="container card reveal" style="margin-top:30px;--reveal-delay:360ms">
+          <h2>Find your sources</h2>
+          <p>Get access to all of the project's contributions.</p>
+          <div>
+            <a class="btn" href="{{ url_for('credits') }}">Take me there</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="foot">
+      <div class="container footer-inner">
+        <small>&copy; Made in France · 2030</small>
+      </div>
+    </footer>
+
+    <script defer src="{{ url_for('static', filename='scripts/site.js') }}"></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Echoes of Arkanum — Credits</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;600;700;900&family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', filename='assets/Echoes_of_Arkanum_Logo_no_bg.png') }}" type="image/png" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+  </head>
+  <body>
+    <header class="head" data-header>
+      <nav class="menu">
+        <input type="checkbox" id="menu"/>
+	<div class="logo">
+          <img class="pic" src="{{ url_for('static', filename='assets/Echoes_of_Arkanum_Logo_no_bg.png') }}" width="54" height="54">
+          <span class="name">Echoes of Arkanum</span>
+          <label for="menu" class="toggle"></label>
+        </div>
+        <ul class="navigation">
+          <a href="{{ url_for('home') }}">Home</a>
+          <a href="{{ url_for('devlog') }}">Dev Log</a>
+          <a href="{{ url_for('credits') }}">Credits</a>
+	  {% if current_user.is_authenticated %}
+	    <a href="{{ url_for('auth.dashboard') }}">Dashboard</a>
+	  {% else %}
+	    <a href="{{ url_for('auth.sign') }}">Log in / Register</a>
+	  {% endif %}
+        </ul>
+      </nav>
+    </header>
+
+    <div class="section">
+      <div class="container">
+        <header>
+          <h1 class="display" id="typewriter">Credits</h1>
+          <p class="lead">The following artifacts come from creators whose work made this project possible.</p>
+        </header>
+
+        <div class="grid-credits">
+
+          <div class="flip-card">
+    	    <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="credit-card card reveal">
+          	  <div class="credit-media" style="--img:url('');"></div>
+          	  <div class="credit-body">
+            	    <span class="index">3D Model</span>
+            	    <h3>Wizard</h3>
+          	  </div>
+        	</div>
+              </div>
+      	      <div class="flip-card-back">
+                <div class="credit-card card reveal">
+                  <div class="credit-body">
+                    <div class="meta">
+                      <ss>Creator</ss><dd>Unknown</dd>
+                      <ss>Source</ss><dd></dd>
+                      <ss>License</ss><dd>Free to Use</dd>
+                    </div>
+                    <p><a class="link-ext" href="#" target="_blank">View Original</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+    	    <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="credit-card card reveal">
+          	  <div class="credit-media" style="--img:url('');"></div>
+          	  <div class="credit-body">
+            	    <span class="index">3D Model</span>
+            	    <h3>Sword</h3>
+          	  </div>
+        	</div>
+              </div>
+      	      <div class="flip-card-back">
+                <div class="credit-card card reveal">
+                  <div class="credit-body">
+                    <div class="meta">
+                      <ss>Creator</ss><dd>Unknown</dd>
+                      <ss>Source</ss><dd></dd>
+                      <ss>License</ss><dd>Free to Use</dd>
+                    </div>
+                    <p><a class="link-ext" href="#" target="_blank">View Original</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+    	    <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="credit-card card reveal">
+          	  <div class="credit-media" style="--img:url('');"></div>
+          	  <div class="credit-body">
+            	    <span class="index">3D Model</span>
+            	    <h3>Tree</h3>
+          	  </div>
+        	</div>
+              </div>
+      	      <div class="flip-card-back">
+                <div class="credit-card card reveal">
+                  <div class="credit-body">
+                    <div class="meta">
+                      <ss>Creator</ss><dd>Unknown</dd>
+                      <ss>Source</ss><dd></dd>
+                      <ss>License</ss><dd>Free to Use</dd>
+                    </div>
+                    <p><a class="link-ext" href="#" target="_blank">View Original</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="foot">
+      <div class="container footer-inner">
+        <small>&copy; Made in France · 2030</small>
+      </div>
+    </footer>
+
+    <script defer src="{{ url_for('static', filename='scripts/site.js') }}"></script>
+  </body>
+</html>
