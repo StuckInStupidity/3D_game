@@ -8,9 +8,3 @@
 <img width="500" height="340" alt="items1" src="https://github.com/user-attachments/assets/188df339-c16f-461b-9b77-9aa77e1cc4fc" />
 <img width="500" height="340" alt="items2" src="https://github.com/user-attachments/assets/2840234d-f076-4535-8362-9c7293d62ffd" />
 
-<img width="500" height="340" alt="menu_evo_spell" src="https://github.com/user-attachments/assets/79743ff7-5037-4b4d-a0b8-625b98200f10" />
-
-https://github.com/user-attachments/assets/0723b708-31ae-4e48-a51a-bd8d4d110de7
-
-https://github.com/user-attachments/assets/6baed02b-4527-421c-bfae-29831962ff86
-
