@@ -1,7 +1,6 @@
 # 3D_game
 <img width="240" height="240" alt="uv" src="https://github.com/user-attachments/assets/54175403-9e72-4505-82be-9aef378731fb" />
 <img width="400" height="240" alt="blueprints" src="https://github.com/user-attachments/assets/19cbeb9f-f0ed-4dde-953d-ce87a6326c4c" />
-<u>Blueprints and palette for UV mapping</u>
 
 <img width="400" height="240" alt="selection" src="https://github.com/user-attachments/assets/84d51e98-a09e-4c7c-8ebe-def49dd17890" />
 <img width="400" height="240" alt="login" src="https://github.com/user-attachments/assets/869c3ae8-bfc7-4719-bf10-226183259c28" />
@@ -11,5 +10,6 @@
 
 
 https://github.com/user-attachments/assets/0723b708-31ae-4e48-a51a-bd8d4d110de7
+
 https://github.com/user-attachments/assets/6baed02b-4527-421c-bfae-29831962ff86
 
