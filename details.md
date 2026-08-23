@@ -1,4 +1,4 @@
-###### **3D Assets**
+## **3D Assets**
 
 Regarding the 3D assets, several constraints related to Ursina had to be considered, especially regarding the number of triangles. Some models had to be optimised quite aggressively in order to avoid unnecessary performance loss, particularly when multiple enemies, spells, and environmental elements are present on the map at the same time.
 
@@ -51,28 +51,16 @@ One fireball spell also used Blender's particle rendering features, including sy
 Several environmental elements were also entirely modelled by hand, including the shop, different map corners, and the well-known mushroom. The mushroom was initially intended to become the main boss of the game, but its rig was particularly complicated to create because of its non-humanoid shape. A complicated rig also means longer and more difficult animation work. On top of that, it used Blender-specific Color Ramp nodes, which do not export correctly to Ursina.	 
 
 
-###### **Left to do :**
-
-
+## **Left to do :**
 
 menus et lobby completely(chat, avatar+level players, choice for competence, login check + room services/ui \& socketio func -> button play for host/ready for players, link map, system host shift/or destroy room) + Database sync with all fields needed
 
-
-
 dashboard (dahsborad page -> profile data | edit/save data | delete | logout) : (arbre de cmpt choisi, leaderboard, avatar choice, xp to next level)
-
 https://www.youtube.com/watch?v=1nxzOrLWiic
-
 https://www.youtube.com/watch?v=CDe5wfHAlAY
 
-
-
 forgot password link + propose username for registration when it already exists + fix sign container on mobile
-
 escape inputs and server puts + jsonify verif + ddos prevention + threadpool limit for room creation + mutexes https://flask.palletsprojects.com/en/stable/web-security/
-
 https://flask.palletsprojects.com/en/stable/deploying/
-
 https://flask.palletsprojects.com/en/stable/appcontext/
-
 https://flask.palletsprojects.com/en/stable/reqcontext/
