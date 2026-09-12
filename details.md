@@ -24,10 +24,7 @@ One of the biggest issues mainly involved materials and the export process betwe
 
 
 
-The technique that was eventually selected relies on a system of material palettes organised into several categories such as “dull”, “standard”, “glow”, and “metal”. These palettes were created in Blender using material node setups based on only three PNG textures: a base colour map, an attribute map, and an emission map.
-
-
-
+The technique that was eventually selected relies on a system of material palettes organised into several categories such as “dull”, “standard”, “glow”, and “metal”. These palettes were created in Blender using blueprints and material node setups based on only three PNG textures: a base colour map, an attribute map, and an emission map. Blueprints were composed of XYZ transformations and arithmetics, for the circut to render a proper principled BSDF.
 The process then involved using Blender's UV Mapping editor, selecting specific faces of a model, and moving and resizing them in the UV editor so that they pointed towards a specific area of the palette. This technique took a significant amount of time at first, but it ultimately proved worthwhile because it made it possible to create consistent materials that were easy to modify and, most importantly, compatible with Ursina.
 
 
