@@ -56,13 +56,21 @@ Several environmental elements were also entirely modelled by hand, including th
 menus et lobby completely(chat, avatar+level players, choice for competence, login check + room services/ui \& socketio func -> button play for host/ready for players, link map, system host shift/or destroy room) + Database sync with all fields needed
 
 dashboard (dahsborad page -> profile data | edit/save data | delete | logout) : (arbre de cmpt choisi, leaderboard, avatar choice, xp to next level)
+
 https://www.youtube.com/watch?v=1nxzOrLWiic
+
 https://www.youtube.com/watch?v=CDe5wfHAlAY
+
 https://www.youtube.com/watch?v=o6YjyOt2Zhc
+
 
 forgot password link + propose username for registration when it already exists + fix sign container on mobile
 escape inputs and server puts + jsonify verif + ddos prevention + threadpool limit for room creation + mutexes 
+
 https://flask.palletsprojects.com/en/stable/web-security/
+
 https://flask.palletsprojects.com/en/stable/deploying/
+
 https://flask.palletsprojects.com/en/stable/appcontext/
+
 https://flask.palletsprojects.com/en/stable/reqcontext/
