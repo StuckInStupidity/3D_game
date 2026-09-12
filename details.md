@@ -29,7 +29,7 @@ The process then involved using Blender's UV Mapping editor, selecting specific 
 
 
 
-Several Blender modelling tools were used regularly throughout the project and proved to be particularly useful. This includes sculpting for the upcoming desert map, where Grand Canyon-style rocks were created, as well as the Knife tool, which was used to create the “A” from “Arkanum” on the coins. X-Ray mode was also especially useful for handling certain complex selections.
+Several Blender modelling tools were used regularly throughout the project and proved to be particularly useful. This includes sculpting and weight painting, where Grand Canyon-style rocks and Mountains were created, as well as the Knife tool, which was used to create the “A” from “Arkanum” on the coins. X-Ray mode was also especially useful for handling certain complex selections.
 
 
 
