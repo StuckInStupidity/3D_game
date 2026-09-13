@@ -43,7 +43,7 @@ Several environmental elements were also entirely modelled by hand, including th
 
 
 
-A trailer was made using blender camera sequencer and timeline, using keyframes to move the camera around to give a tour of the mini-maps of the game. Then was rendered as MPEG-4 format video in Video Editing tab of Blender, every PNG frame used for the video were compressed beforehand directly in Blender. Some elements were animated such as the boats on the river using dynamic paint (canva/brush), as well as the opening of the chest. Scene lights needed to be set up, so areas of different sizes and angles were used.
+A trailer was made using blender camera sequencer and timeline, using keyframes to move the camera around to give a tour of the mini-maps of the game. Then was rendered as MPEG-4 format video in Video Editing tab of Blender, every PNG frame used for the video were compressed beforehand directly in the Blender output properties. Some elements were animated such as the boats on the river using dynamic paint (canva/brush), as well as the opening of the chest. Scene lights needed to be set up, so areas of different sizes and angles were used.
 
 
 ## **Left to do :**
