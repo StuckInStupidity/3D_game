@@ -29,23 +29,21 @@ The process then involved using Blender's UV Mapping editor, selecting specific 
 
 
 
-Several Blender modelling tools were used regularly throughout the project and proved to be particularly useful. This includes sculpting and weight painting, where Grand Canyon-style rocks and Mountains were created, as well as the Knife tool, which was used to create the “A” from “Arkanum” on the coins. X-Ray mode was also especially useful for handling certain complex selections.
+Several Blender modelling tools were used regularly throughout the project and proved to be particularly useful. This includes sculpting and weight painting, where Grand Canyon-style rocks and Mountains were created, as well as the Knife tool, which was used to create the “A” from “Arkanum” on the coins. Boolean tool is another which was used to make the river fit in the ground for example. X-Ray mode was also especially useful for handling certain complex selections.
 
 
 
 The spells were also entirely modelled by hand using different techniques such as subdivision, masks, Simple Deform, vertex groups, and vertex weight editing. Unlike the characters, the spells are not actually animated. They are simply standard .glb models that rotate around the player directly through Ursina by modifying their self.rotation\_y.
-
-
-
 Tests were also carried out using animated strips, but this required a high level of precision regarding frames, and the overall process was particularly long to set up for a result that was not necessarily better than a static version.
-
-
-
 One fireball spell also used Blender's particle rendering features, including systems such as Quick Smoke, domain containers, and different volumetric effects. The main issue was that Ursina did not take these effects into account during import. One possible alternative would have been to use 2D sprite sheets, but this approach was not considered particularly convincing. It would have required constantly managing sprite orientation, frames, FPS, and their appearance on the map. More importantly, the resulting PNG images did not really match the original 3D model that had been created.
 
 
 
-Several environmental elements were also entirely modelled by hand, including the shop, different map corners, and the well-known mushroom. The mushroom was initially intended to become the main boss of the game, but its rig was particularly complicated to create because of its non-humanoid shape. A complicated rig also means longer and more difficult animation work. On top of that, it used Blender-specific Color Ramp nodes, which do not export correctly to Ursina.	 
+Several environmental elements were also entirely modelled by hand, including the shop, different map corners, and the well-known mushroom. The mushroom was initially intended to become the main boss of the game, but its rig was particularly complicated to create because of its non-humanoid shape. A complicated rig also means longer and more difficult animation work. On top of that, it used Blender-specific Color Ramp nodes, which do not export correctly to Ursina.	
+
+
+
+A trailer was made using blender camera sequencer and timeline, using keyframes to move the camera around to give a tour of the mini-maps of the game. Then was rendered as MPEG-4 format video in Video Editing tab of Blender. Some elements were animated such as the boats on the river using dynamic paint (canva/brush), as well as the opening of the chest. Scene lights needed to be set up, so areas of different sizes and angles were used.
 
 
 ## **Left to do :**
