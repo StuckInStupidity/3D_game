@@ -29,7 +29,7 @@ The process then involved using Blender's UV Mapping editor, selecting specific 
 
 
 
-Several Blender modelling tools were used regularly throughout the project and proved to be particularly useful. This includes sculpting and weight painting, where Grand Canyon-style rocks and Mountains were created, as well as the Knife tool, which was used to create the “A” from “Arkanum” on the coins. Boolean tool is another which was used to make the river fit in the ground for example. X-Ray mode was also especially useful for handling certain complex selections. Enabling proportional editing to create random stone shapes etc...
+Several Blender modelling tools were used regularly throughout the project and proved to be particularly useful. This includes sculpting and weight painting, where Grand Canyon-style rocks and Mountains were created, as well as the Knife tool, which was used to create the “A” from “Arkanum” on the coins. Boolean tool is another which was used to make the river fit in the ground for example. X-Ray mode was also especially useful for handling certain complex selections. Enabling proportional editing to create random stone shapes and using loop cuts/extrude/insert/scale/rotate to give the landscape a very natural look (breaking the symmetry). As well as bezier curves for the ropes of the bridge.
 
 
 
