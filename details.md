@@ -29,7 +29,7 @@ The process then involved using Blender's UV Mapping editor, selecting specific 
 
 
 
-Several Blender modelling tools were used regularly throughout the project and proved to be particularly useful. This includes sculpting and weight painting, where Grand Canyon-style rocks and Mountains were created, as well as the Knife tool, which was used to create the “A” from “Arkanum” on the coins. Boolean tool is another which was used to make the river fit in the ground for example. X-Ray mode was also especially useful for handling certain complex selections. Proportional editing for random stone shapes.
+Several Blender modelling tools were used regularly throughout the project and proved to be particularly useful. This includes sculpting and weight painting, where Grand Canyon-style rocks and Mountains were created, as well as the Knife tool, which was used to create the “A” from “Arkanum” on the coins. Boolean tool is another which was used to make the river fit in the ground for example. X-Ray mode was also especially useful for handling certain complex selections. Enabling proportional editing to create random stone shapes etc...
 
 
 
